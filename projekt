@@ -112,7 +112,7 @@ def handle_callback(callback_data, user_id, chat_id, message_id):
         show_orders(chat_id, user_id, message_id)
     elif callback_data == "contacts":
         user_states[user_id] = "contacts"
-        show_result_with_back(chat_id, "📍наши контакты:\n\nРазработка: @PAZRAB\nРеклама: @PAZRAB\n\nсайта нет, но может и будет", message_id)
+        show_result_with_back(chat_id, "📍наши контакты:\n\nРазработка: @classic_nugget\nРеклама: @classic_nugget\n\nсайта нет, но может и будет", message_id)
     elif callback_data == "invite":
         user_states[user_id] = "invite"
         show_result_with_back(chat_id, "👥Если вам нравится бот, то можете отправить своим друзьям ссылку ниже:\n\nhttps://t.me/deliverystable_bot", message_id)
